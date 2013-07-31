@@ -1,4 +1,4 @@
-Highrise Slovenian Translation
+Slovenian Highrise Translation
 ==============================
 
 ## Why?
