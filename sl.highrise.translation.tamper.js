@@ -1,9 +1,9 @@
 // ==UserScript==
-// @name         Highrise prevod
-// @namespace    37signalsHighriseTranslation
-// @include      https://kmetija.highrisehq.com/*
+// @name         37signals Highrise Slovenian Translation
+// @namespace    37signalsHighriseSlTranslation
+// @include      https://*.highrisehq.com/*
 // @author       Tomaž Žlender
-// @description  37signals Highrise slovenski prevod
+// @description  37signals Highrise Slovenian Translation
 // ==/UserScript==
 
 // a function that loads jQuery and calls a callback function when jQuery has finished loading
