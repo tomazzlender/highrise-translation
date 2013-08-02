@@ -3,11 +3,11 @@
 
 ## Why?
 
-My parents don't understand English, but they wanted to use beautiful CRM Highrise by 37signals.
+There are people who can't use beautiful web app Highrise by 37signals because they don't understand English words. For example my parents :).
 
 ## How does it work?
 
-Everytime page loads English words are replaced with translations. It is not perfect, but it works ok. Someone who doesn't speaks English can use app pretty much without a problem.
+Everytime page loads English words are replaced with translations. It is not perfect, but it works ok. Someone who doesn't speak English can use app pretty much without a problem.
 
 ## How to install?
 
