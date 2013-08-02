@@ -5,7 +5,7 @@
 
 ## Why?
 
-There are people who can't use beautiful web app Highrise by 37signals because they don't understand English words. For example my parents :).
+There are people who can't use beautiful web app Highrise by 37signals because they don't understand English language. For example my parents :).
 
 ## How does it work?
 
