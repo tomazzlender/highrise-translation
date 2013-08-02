@@ -79,9 +79,6 @@ function main() {
         return trans;
     }
     
-    // Remove Upgrade Bar
-    jQuery("#upgrade_bar").hide(); //MOJ HACK
-    
     // Page Overview
     if (jQuery('body').hasClass('overview')) {
         jQuery(".page_header h1").text(_("Latest activity"));
@@ -95,8 +92,6 @@ function main() {
 
         jQuery("#dashboard_add_tasks h5:first").text(_("Your upcoming tasks"));
         jQuery("#dashboard_add_tasks #new_task_container_for_page:first p:first a:first").text(_("Add a new task"));
-        
-        // jQuery("#page_sidebar div.feed").hide(); //MOJ HACK
         jQuery("#page_sidebar div.feed a:last").text(_("Feed for latest activity"));
     }
     
@@ -136,8 +131,6 @@ function main() {
             jQuery(this).html(_("All tags"));
             jQuery(this).prepend(element);
         });
-        
-        // jQuery("div.sidebox_wrapper div.sidebox:first").hide(); //MOJ HACK
     }
     
     // Notes List - on pages Overview, Party#show, Search
@@ -173,9 +166,7 @@ function main() {
             jQuery("#parties_header span.title").text(_("Recently ADDED contacts"));
         }
         jQuery("#parties_header small.toggle a").text(_("Change view"));
-    
-        // jQuery("#page_sidebar div.recent_imports").hide(); //MOJ HACK
-        // jQuery("#page_sidebar div.sidebox.closedbox:eq(1)").hide(); //MOJ HACK
+
         jQuery("#page_sidebar div[behavior='tag_picker'] h5").text(_("Browse by tag"));
     
         jQuery("#page_filter_options p:first").text(_("Filter your contacts by:"));
@@ -217,8 +208,6 @@ function main() {
             jQuery(this).prepend(element);
         });
         jQuery("form.new_note .submit input").val(_("Add this note"));
-        
-        // jQuery('#recordings_toggles div.links').hide(); //MOJ HACK
     
         jQuery("div.sidebar_controls a.edit").text(_("Edit this person"));
         // Tasks
@@ -231,30 +220,25 @@ function main() {
     
     // Page New/Edit Person
     if(jQuery('body').hasClass("edit_person") || jQuery('body').hasClass("new_person")) {        
-        // jQuery("#person_contact_data_phone_numbers__location").val("Home"); //MOJ HACK
         jQuery("#person_contact_data_phone_numbers__location option[value=Home]").text(_("Home [phone number]"));
         jQuery("#person_contact_data_phone_numbers__location option[value=Work]").text(_("Work [phone number]"));
         jQuery("#person_contact_data_phone_numbers__location option[value=Mobile]").text(_("Mobile [phone number]"));
         jQuery("#person_contact_data_phone_numbers__location option[value=Pager]").text(_("Pager [phone number]"));
         jQuery("#person_contact_data_phone_numbers__location option[value=Other]").text(_("Other"));
 
-        // jQuery("#person_contact_data_email_addresses__location").val("Home")); //MOJ HACK
         jQuery("#person_contact_data_email_addresses__location option[value=Home]").text(_("Home [email]"));
         jQuery("#person_contact_data_email_addresses__location option[value=Work]").text(_("Work [email]"));
         jQuery("#person_contact_data_email_addresses__location option[value=Other]").text(_("Other"));
         
-        // jQuery("#person_contact_data_instant_messengers__location").val("Personal")); //MOJ HACK
         jQuery("#person_contact_data_instant_messengers__protocol option[value=Other]").text(_("Other"));
         jQuery("#person_contact_data_instant_messengers__location option[value=Work]").text(_("Work [IM]"));
         jQuery("#person_contact_data_instant_messengers__location option[value=Personal]").text(_("Personal [IM]"));
         jQuery("#person_contact_data_instant_messengers__location option[value=Other]").text(_("Other"));
         
-        // jQuery("#person_contact_data_web_addresses__location").val("Personal")); //MOJ HACK
         jQuery("#person_contact_data_web_addresses__location option[value=Personal]").text(_("Personal [website]"));
         jQuery("#person_contact_data_web_addresses__location option[value=Work]").text(_("Work [website]"));
         jQuery("#person_contact_data_web_addresses__location option[value=Other]").text(_("Other"));
         
-        // jQuery("#person_contact_data_addresses__location").val("Home"); //MOJ HACK
         jQuery("#person_contact_data_addresses__location option[value=Home]").text(_("Home [address]"));
         jQuery("#person_contact_data_addresses__location option[value=Work]").text(_("Work [address]"));
         jQuery("#person_contact_data_addresses__location option[value=Other]").text(_("Other"));
@@ -262,7 +246,6 @@ function main() {
         jQuery("form.subject div.custom_fields .section_header h1").text(_("Custom Fields"));
         jQuery("form.subject div.custom_fields .section_header a").text(_("Set up your custom fields"));
         
-        // jQuery(".social_fields").hide(); //MOJ HACK
         jQuery("form.subject .social_fields .section_header h1").text(_("Social Networks"));
         jQuery("form.subject .social_fields table .linkedin_url .overlay_wrapper .overlabel").text(_("Add a LinkedIn profile URL"));
         jQuery("form.subject .social_fields table .twitter .overlay_wrapper .overlabel").text(_("Add a Twitter username"));
@@ -279,8 +262,6 @@ function main() {
     
     // Page New Person
     if(jQuery('body').hasClass("new_person")) {
-        // jQuery("#page_sidebar").hide(); //MOJ HACK
-        
         jQuery("#page_header h1 span.toggle a").text(_("add a new company"));
         jQuery("#page_header h1 span.toggle").html(function(){
             var element = jQuery(this).find("a").clone();
@@ -307,7 +288,7 @@ function main() {
         jQuery("form.subject table.contact_types tr:eq(5) td h2").text(_("Email"));
         jQuery("form.subject table.contact_types tr:eq(5) td .blank_slate").text(_("Add an email address"));
         jQuery("form.subject table.contact_types tr:eq(5) td .add a").text(_("Add another [email address]"));
-        // jQuery("form.subject table.contact_types tr:eq(6)").hide(); //MOJ HACK
+
         // IM
         jQuery("form.subject table.contact_types tr:eq(6) td h2").text(_("IM"));
         jQuery("form.subject table.contact_types tr:eq(6) td .blank_slate").text(_("Add an instant message account"));
@@ -324,7 +305,6 @@ function main() {
         jQuery("form.subject table.contact_types tr:eq(8) td .contact_methods p:eq(1) .overlay_wrapper:eq(1) .overlabel").text(_("State"));
         jQuery("form.subject table.contact_types tr:eq(8) td .contact_methods p:eq(1) .overlay_wrapper:eq(2) .overlabel").text(_("Zip"));
         jQuery("#person_contact_data_addresses__country option:first").text(_("Choose a country..."));
-        // jQuery("#person_contact_data_addresses__country").val("Slovenia"); //MOJ HACK
         jQuery("form.subject table.contact_types tr:eq(8) td .add a").text(_("Add another [address]"));
         
         jQuery("form.subject p.background_label strong").html(_("Background info"));
@@ -359,7 +339,6 @@ function main() {
         jQuery("form.subject table.contact_types tr:eq(4) td .blank_slate").text(_("Add an email address"));
         jQuery("form.subject table.contact_types tr:eq(4) td .add a").text(_("Add another [email address]"));
         // IM
-        // jQuery("form.subject table.contact_types tr:eq(5)").hide(); MOJ HACK
         jQuery("form.subject table.contact_types tr:eq(5) td h2").text(_("IM"));
         jQuery("form.subject table.contact_types tr:eq(5) td .blank_slate").text(_("Add an instant message account"));
         jQuery("form.subject table.contact_types tr:eq(5) td .add a").text(_("Add another [IM]"));
@@ -425,7 +404,6 @@ function main() {
         jQuery("#page_header div.edit_links a:first").html(_("Edit"));
         jQuery("#page_header div.edit_links a:last").html(_("Delete"));
         jQuery("#new_comment div.body h1").html(_("Leave a comment..."));
-        // jQuery("#new_comment #new_comment_form_basics a").hide(); //MOJ HACK
         jQuery("#new_comment_form_basics a").text(_("Attach files to this comment"));
         jQuery("#new_comment div.submit input").val(_("Add this comment"));
         jQuery("#page_sidebar div.contact_info h5").html(function(){
