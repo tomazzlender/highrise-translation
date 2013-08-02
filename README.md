@@ -19,7 +19,7 @@ Install with Tampermonkey for Chrome or Greasemonkey for Firefox. File highrise.
 
 - Slovenian
 
-Looking for another one? Translate "highrise.translation.sl.js".
+Looking for another language? Translate "highrise.translation.sl.js".
 
 ## Authors
 
