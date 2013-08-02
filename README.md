@@ -1,6 +1,8 @@
 37signals Highrise translation
 ==============================
 
+![37signals Highrise translation screenshot](http://tomazzlender.github.io/highrise-translation/images/sl.translation.screen.overview.png)
+
 ## Why?
 
 There are people who can't use beautiful web app Highrise by 37signals because they don't understand English words. For example my parents :).
